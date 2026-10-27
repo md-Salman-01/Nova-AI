@@ -20,7 +20,7 @@ function Home() {
     error,
   } = useChat({
     transport: new DefaultChatTransport({
-      api: "http://localhost:3001/api/chat",
+      api: "/api/chat",
     }),
   });
 
@@ -105,7 +105,7 @@ function Home() {
                   <div
                     className={`w-fit max-w-[80%] break-words px-4 py-3 ${
                       isUser
-                        ? "rounded-3xl bg-[#29282E] text-white"
+                        ? "rounded-3xl bg-[#000000] text-white"
                         : "rounded-2xl bg-[#0a0a0b] text-[#E3E3E3]"
                     }`}
                   >
